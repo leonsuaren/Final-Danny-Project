@@ -1,3 +1,35 @@
-<p>
-  real-estate-main-menu works!
-</p>
+<div>
+  <div class="container re-sm-nav-style">
+    <!--<div class="collapse navbar-collapse" id="subNavbarContent">-->
+      <div class="nav-style-contact">  
+        <div class="nav-style-contact">
+          <a href="#" class="top-menu-link"><i class="fa fa-phone-square" aria-hidden="true"></i><span>513-888-1155</span></a>
+        </div>
+        <div class="nav-style-contact">
+          <a href="#" class="top-menu-link"><i class="fa fa-envelope" aria-hidden="true"></i><span>danny1@gmail.com</span></a>
+        </div>
+        </div>
+        <div class="nav-style-logIn">
+          <a href="#">LOG IN</a>
+          <a href="#">REGISTER</a>
+        </div>
+    <!--</div>-->
+  </div>
+</div>
+<hr>
+<nav class="navbar navbar-light bg-light navbar-expand-lg">
+  <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#subNavbarContent">
+    <i class="fa fa-ellipsis-v dotIcon" aria-hidden="true"></i>
+   </button>-->
+  <a class="navbar-brand" href="#">DANNY SUAREZ</a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+    <i class="fa fa-bars dotIcon" aria-hidden="true"></i>
+   </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="nav navbar-nav container">
+          <li class="nav-item re-mm-nav-style">
+            <a class="nav-link" *ngFor = "let menu of menus" routerLink="{{ menu.router }}" routerLinkActive="active">{{ menu.name }}</a>
+          </li>
+        </ul>
+    </div>
+</nav>

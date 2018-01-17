@@ -1,0 +1,162 @@
+ @import '../../../node_modules/bootstrap/scss/custom.scss';
+
+
+div {
+    width: 100%;
+    height: 300px;
+    background: $backgroundFooter;
+}
+
+h2 {
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+}
+
+.fa {
+    font-size: 1.5em;
+    width: 45px;
+    height: 45px;
+    // padding: 10px;
+    margin: 5px;
+}
+
+.sectionSocial {
+    margin-top: 80px;
+}
+
+.fa-facebook {
+    background: $facebook;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.fa-facebook:hover {
+    background: $white;
+    color: $facebook;
+}
+
+.fa-twitter {
+    background: $twitter;
+    padding-top: 10px;
+    padding-left: 11px;
+}
+
+.fa-twitter:hover {
+    background: $white;
+    color: $twitter;
+}
+
+.fa-linkedin {
+    background: $linkedIn;
+    padding-top: 10px;
+    padding-left: 12px;
+}
+
+.fa-linkedin:hover {
+    background: $white;
+    color: $linkedIn;
+}
+
+.fa-google-plus {
+    background: $googlePlus;
+    padding-top: 10px;
+    padding-left: 8px;
+}
+
+.fa-google-plus:hover {
+    background: $white;
+    color: $googlePlus;
+}
+
+hr {
+    background-color: $white;
+}
+
+.re-fo-style {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 300px;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+}
+
+.contactIcons {
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+    width: 60px;
+
+    i {
+        color: $white;
+        background: $mainFontColor;
+        border-radius: 50%;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+h2 {
+    color: $mainFontColor;
+    margin: 20px;
+    font-family: $mainFont;
+}
+
+.re-fo-contact {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    height: 170px;
+
+    a {
+        display: block;
+        margin: 15px 5px 30px 5px;
+        font-family: $mainFont;
+    }
+}
+
+.re-fo-links {
+    height: 160px;
+}
+
+/****BREACKPOINTS */
+
+ @media (min-width: 200px){
+    
+    .re-fo-style {
+    
+        height: 800px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1600px) {
+ 
+} */

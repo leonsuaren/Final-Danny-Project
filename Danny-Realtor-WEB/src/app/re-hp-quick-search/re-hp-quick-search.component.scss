@@ -1,0 +1,43 @@
+@import '../../../node_modules/bootstrap/scss/custom.scss';
+
+button {
+    background: $lightOrange;
+}
+
+button:hover {
+    background: $darkOrange;
+}
+
+.re-mm-search {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    
+    img {
+    position: absolute;
+    height: 217px;
+    width: 1635px;
+    z-index: -1;
+}
+
+}
+
+.searchForm {
+    width: 500px;
+    padding: 5px 50px;
+    margin: 0;
+    box-shadow: 10px 10px 10px 5px;
+
+    hr {
+        background-color: $white;
+    }
+}
+
+.searchTitle {
+    background: $mainOrange;
+    border-radius: 5px;
+    color: $mainFontColor;
+    font-family: $mainFont;
+    text-align: center;
+}

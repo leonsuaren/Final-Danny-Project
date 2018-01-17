@@ -1,0 +1,171 @@
+@import '../../../node_modules/bootstrap/scss/custom.scss';
+
+.stiky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar {
+    z-index: 2;
+}
+
+.re-mm-nav-style {
+    a {
+    color: $mainFontColor;
+    display: inline-block;
+    text-align: center;
+    width: 180px;
+    font-family: $mainFont;
+}
+}
+
+.active {
+    border-bottom: 3px solid $lightOrange;
+}
+
+.active:hover {
+    border-bottom: 3px solid $darkOrange;
+}
+
+//**********SECUNDARY MENU************//
+
+.re-sm-nav-style {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    a {
+        font-size: .9em;
+        color: $secondaryFontColor;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        margin-right: 15px;
+        margin-top: 10px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .nav-style-contact, .nav-style-logIn {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-style-contact a {
+        font-family: $mainFont;
+        color: $mainFontColor;
+        font-size: 1em;
+    }
+}
+
+// i {
+//     color: $mainOrange;
+// }
+
+hr {
+    margin: 0;  
+}
+
+.icon {
+    width: 15px;
+}
+
+.dotIcon {
+    font-size: .9em;
+    color: $secondaryFontColor;
+}
+
+.top-menu-link {
+    i {
+    color: $mainOrange;
+}
+    span {
+        color: $mainFontColor;
+        margin-left: 10px;
+    }
+}
+
+//****BREACKPOINTS***///
+
+@media (min-width: 200px){
+        .re-mm-nav-style {
+    a {
+    display: block;
+    text-align: left;
+}
+}
+    .re-sm-nav-style {
+        span {
+            display: none;
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    .re-mm-nav-style {
+    a {
+    display: block;
+    text-align: left;
+}
+}
+    .re-sm-nav-style {
+        span {
+            display: none;
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+        .re-mm-nav-style {
+    a {
+    display: block;
+    text-align: left;
+}
+}
+    .re-sm-nav-style {
+        span {
+            display: inline-block;;
+        }
+    }
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+      .re-mm-nav-style {
+    width: max-content;
+    a {
+    display: inline-block;
+    text-align: left;
+    width: 150px;
+}
+}   
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+           .re-mm-nav-style {
+               width: max-content;
+    a {
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+}
+}
+}
+
+@media (min-width: 1600px) {
+           .re-mm-nav-style {
+               width: max-content;
+    a {
+    display: inline-block;
+    width: 180px;
+    text-align: center;
+}
+}
+}
+
+

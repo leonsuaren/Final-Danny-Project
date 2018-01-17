@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 import { AppComponent } from './app.component';
@@ -15,6 +17,13 @@ import { FooterComponent } from './footer/footer.component';
 import { RealEstateMainMenuComponent } from './real-estate-main-menu/real-estate-main-menu.component';
 import { SellComponent } from './sell/sell.component';
 import { ServicesComponent } from './services/services.component';
+
+import {
+  MatSidenavModule,
+  MatButtonModule,
+  MatToolbarModule,
+  MatCardModule
+} from '@angular/material';
 
 
 @NgModule({
@@ -34,7 +43,21 @@ import { ServicesComponent } from './services/services.component';
     ServicesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatSidenavModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatCardModule,
+    RouterModule.forRoot([
+     { path: '', component: HomeComponent, pathMatch: 'full' },
+     { path: 'buy', component: BuyComponent, pathMatch: 'full' },
+     { path: 'sell', component: SellComponent, pathMatch: 'full'},
+     { path: 'about', component: AboutComponent, pathMatch: 'full' },
+     { path: 'services', component: ServicesComponent, pathMatch: 'full' },
+     { path: 'contact', component: ContactComponent, pathMatch: 'full' },
+     { path: '**', component: NotFoundComponent, pathMatch: 'full' },
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]
