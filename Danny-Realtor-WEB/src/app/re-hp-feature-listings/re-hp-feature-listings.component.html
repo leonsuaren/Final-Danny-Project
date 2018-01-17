@@ -1,0 +1,22 @@
+<div class="container">
+  <h3>Featured Listings</h3>
+  <hr>
+  <div class="row">
+        <mat-card class="re-hp-fl-card col-lg-3 col-md-6 col-sm-6" *ngFor = "let feature of features">
+            <mat-card-header>
+              <mat-card-title>{{ feature.title }}</mat-card-title>
+              <mat-card-subtitle>{{ feature.subtitle }}</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="{{ feature.img }}" alt="{{ feature.title }}">
+            <mat-card-content>
+              <p>
+                {{ feature.content }}
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button>SHARE</button>
+            </mat-card-actions>
+        </mat-card>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+@import './bootstrap/scss/custom';
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: $mainFontColor;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.re-hp-fl-card {
+    margin: 5px;
+}
+
+button {
+    color: $mainOrange;
+}
