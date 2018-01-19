@@ -21,14 +21,14 @@ export class RealEstateMainMenuComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-     $(window).scroll(function() {
-        if($(this).scrollTop()>35){
-          $('.navbar').addClass("stiky");
-        }
-        else {
-          $('.navbar').removeClass("stiky");
-        }
-    })
+    //  $(window).scroll(function() {
+    //     if($(this).scrollTop()>35){
+    //       $('.navbar').addClass("stiky");
+    //     }
+    //     else {
+    //       $('.navbar').removeClass("stiky");
+    //     }
+    // })
   }
 
 }

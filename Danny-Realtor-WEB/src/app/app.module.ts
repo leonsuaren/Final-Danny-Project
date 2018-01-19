@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
+import { HttpModule } from '@angular/http';
+import { DataService } from './data.service';
+
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
@@ -49,6 +52,7 @@ import {
     MatButtonModule,
     MatToolbarModule,
     MatCardModule,
+    HttpModule,
     RouterModule.forRoot([
      { path: '', component: HomeComponent, pathMatch: 'full' },
      { path: 'buy', component: BuyComponent, pathMatch: 'full' },
@@ -59,7 +63,7 @@ import {
      { path: '**', component: NotFoundComponent, pathMatch: 'full' },
     ]),
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
