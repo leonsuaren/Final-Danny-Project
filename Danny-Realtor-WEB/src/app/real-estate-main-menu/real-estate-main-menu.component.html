@@ -28,8 +28,10 @@
     <div class="collapse navbar-collapse" id="navbarContent">
         <ul class="nav navbar-nav container">
           <li class="nav-item re-mm-nav-style">
-            <a class="nav-link" *ngFor = "let menu of menus" routerLink="{{ menu.router }}" routerLinkActive="active">{{ menu.name }}</a>
+              <!-- <a class="nav-link" *ngFor = "let menu of menus" routerLink="{{ menu.router }}" routerLinkActive="active">{{ menu.name }}</a> -->
+            <a class="nav-link" *ngFor = "let menus of menu" routerLink="{{ menus.router }}">{{ menus.description }}</a>
           </li>
+          <app-contact></app-contact>
         </ul>
     </div>
 </nav>

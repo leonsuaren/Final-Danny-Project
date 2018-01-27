@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
+
 
 @Component({
   selector: 'app-real-estate-main-menu',
@@ -7,9 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RealEstateMainMenuComponent implements OnInit {
 
-  menus = [
-    {name: 'HOME', router: ''},
-    {name: 'BUY', router: '/buy'},
+  menu = [
+    {description: 'HOME', router: ''},
+    {description: 'BUY', router: '/buy'},
     {name: 'SELL MY HOUSE', router: '/sell'},
     {name: 'SERVICES', router: '/services'},
     {name: 'ABOUT', router: '/about'},
@@ -17,8 +19,15 @@ export class RealEstateMainMenuComponent implements OnInit {
     // {name: '**', router: '/'}
     ]
   
+    menus: Array<any>;
+    
 
-  constructor() { }
+  constructor(private _dataService: DataService) { 
+
+    this._dataService.getMenu()
+    .subscribe(res => this.menu = res);
+
+  }
 
   ngOnInit() {
     //  $(window).scroll(function() {

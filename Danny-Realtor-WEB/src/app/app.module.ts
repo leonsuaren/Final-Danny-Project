@@ -20,14 +20,21 @@ import { FooterComponent } from './footer/footer.component';
 import { RealEstateMainMenuComponent } from './real-estate-main-menu/real-estate-main-menu.component';
 import { SellComponent } from './sell/sell.component';
 import { ServicesComponent } from './services/services.component';
+import { ReContactFormComponent } from './re-contact-form/re-contact-form.component';
+
 
 import {
   MatSidenavModule,
   MatButtonModule,
   MatToolbarModule,
-  MatCardModule
+  MatCardModule,
+  MatDialogModule,
+  MatDialog, 
+  MatDialogRef, 
+  MAT_DIALOG_DATA,
+  MatFormFieldModule,
+  MatInputModule
 } from '@angular/material';
-
 
 @NgModule({
   declarations: [
@@ -43,7 +50,8 @@ import {
     FooterComponent,
     RealEstateMainMenuComponent,
     SellComponent,
-    ServicesComponent
+    ServicesComponent,
+    ReContactFormComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +60,10 @@ import {
     MatButtonModule,
     MatToolbarModule,
     MatCardModule,
+    MatDialogModule,
     HttpModule,
+    MatFormFieldModule,
+    MatInputModule,
     RouterModule.forRoot([
      { path: '', component: HomeComponent, pathMatch: 'full' },
      { path: 'buy', component: BuyComponent, pathMatch: 'full' },
