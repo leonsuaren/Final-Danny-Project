@@ -4,16 +4,22 @@
     padding: 0;
 }
 
-.img-container::after {
-    position: relative;
-    background-image: linear-gradient(to bottom, transparent 0%, red 100%);
-    content: ' ';
-}
+// .img-container::after {
+//     display: block;
+//     position: relative;
+//     background-image: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
+//     background-image: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
+//     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
+//     content: ' ';
+// }
 
 img {
     margin: 20px 0px;
     height: 450px;
     width: 450px;
+    // background-image: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
+    // background-image: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
+    // background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
 }
 
 mat-card {
