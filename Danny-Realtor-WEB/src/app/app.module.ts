@@ -33,8 +33,13 @@ import {
   MatDialogRef, 
   MAT_DIALOG_DATA,
   MatFormFieldModule,
-  MatInputModule
+  MatInputModule,
 } from '@angular/material';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { ReHpThumbnailComponent } from './re-hp-thumbnail/re-hp-thumbnail.component';
+import { ReHpThumbnailOneComponent } from './re-hp-thumbnail-one/re-hp-thumbnail-one.component';
+import { ReHpThumbnailTwoComponent } from './re-hp-thumbnail-two/re-hp-thumbnail-two.component';
+import { ReHpThumbnailThreeComponent } from './re-hp-thumbnail-three/re-hp-thumbnail-three.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +56,12 @@ import {
     RealEstateMainMenuComponent,
     SellComponent,
     ServicesComponent,
-    ReContactFormComponent
+    ReContactFormComponent,
+    SidenavComponent,
+    ReHpThumbnailComponent,
+    ReHpThumbnailOneComponent,
+    ReHpThumbnailTwoComponent,
+    ReHpThumbnailThreeComponent
   ],
   imports: [
     BrowserModule,
@@ -64,6 +74,7 @@ import {
     HttpModule,
     MatFormFieldModule,
     MatInputModule,
+    MatSidenavModule,
     RouterModule.forRoot([
      { path: '', component: HomeComponent, pathMatch: 'full' },
      { path: 'buy', component: BuyComponent, pathMatch: 'full' },
@@ -75,6 +86,12 @@ import {
     ]),
   ],
   providers: [DataService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    ReContactFormComponent,
+    ReHpThumbnailOneComponent,
+    ReHpThumbnailTwoComponent,
+    ReHpThumbnailThreeComponent
+  ]
 })
 export class AppModule { }

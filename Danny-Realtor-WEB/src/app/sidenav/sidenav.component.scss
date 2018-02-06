@@ -1,0 +1,52 @@
+@import '../../../node_modules/bootstrap/scss/custom.scss';
+
+
+.re-container {
+    width: 1000px;
+    height: 300px;
+    border: 1px solid #CECECE;
+    background: #FFFFFF;
+    margin: 20px;
+
+  }
+  
+  .sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    
+    img {
+        height: 290px;
+        width: 990px;
+        position: relative;
+    }
+
+    button {
+        background: $lightOrange;
+        position: absolute;
+    }
+  }
+  
+  .re-sidenav {
+    padding: -10px;
+    // background: #CECECE;
+
+    img {
+        height: 290px;
+        width: 990px;
+        position: relative;
+    }
+    p {
+        margin: 50px;
+        border: 2px solid black;
+        padding: 20px;
+        
+    }
+  }
+  
+  div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  }

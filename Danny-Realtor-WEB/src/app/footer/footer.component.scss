@@ -1,7 +1,7 @@
  @import '../../../node_modules/bootstrap/scss/custom.scss';
-* {
-    border: 1px solid black;
-}
+// * {
+//     border: 1px solid black;
+// }
 
 .sectionAbout {
     height: 250px;
@@ -31,10 +31,21 @@ section {
 
 .sectionSocial {
     margin-top: 80px;
-    height: 200px;
+    padding: 0%;
+    height: 100px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    a {
+        height: 55px;
+        margin-top: 20px;
+    }
 }
 
 .fa-facebook {
+    align-self: center;
     background: $facebook;
     padding-top: 10px;
     padding-left: 15px;
@@ -86,8 +97,6 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 100px;
-    border: 1px solid black;
 }
 
 a {
@@ -97,6 +106,10 @@ a {
 
 .sectionContact {
     height: 295px;
+    width: 200px;
+    h2 {
+        width: 50px;
+    }
 }
 
 .contactIcons {
@@ -125,6 +138,7 @@ h2 {
     flex-direction: row;
     margin: 0;
     height: 170px;
+    width: 200px;
 
     a {
         display: block;
@@ -135,6 +149,10 @@ h2 {
 
 .re-fo-links {
     height: 160px;
+    width: 250px;
+    a {
+        width: 150px;
+    }
 }
 
 /****BREACKPOINTS */
