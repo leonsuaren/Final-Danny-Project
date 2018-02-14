@@ -54,3 +54,59 @@ mat-card {
             background: $secondaryFontColor;
             padding: 20px;
         }
+
+//****BREACKPOINTS***///
+
+@media (min-width: 200px){
+   img {
+       display: none;
+   }
+   .col-xs-12 {
+    max-width: 100%;
+   }
+   p {
+       font-size: .8em;
+   }
+   .span-about {
+       font-size: 1.5em;
+   }
+   .span-name {
+       font-size: 1.5em;
+   }
+   mad-card {
+       max-width: 300px;
+   }
+   .first-paragraph, .second-paragraph, .third-paragraph {
+       max-width: 300px;
+   }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    img {
+        display: inline-block;
+    }
+     
+}
+
+@media (min-width: 1600px) {
+    img {
+        display: inline-block;
+    }
+     
+}

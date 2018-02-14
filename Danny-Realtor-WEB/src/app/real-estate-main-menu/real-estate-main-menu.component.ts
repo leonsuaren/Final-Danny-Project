@@ -23,9 +23,11 @@ export class RealEstateMainMenuComponent implements OnInit {
     
 
   constructor(private _dataService: DataService) { 
-
     this._dataService.getMenu()
-    .subscribe(res => this.menu = res);
+    .subscribe(res => {
+      this.menus = res;
+      console.log(res);
+    });
 
   }
 
