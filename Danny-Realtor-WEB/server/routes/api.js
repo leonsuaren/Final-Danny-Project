@@ -42,4 +42,19 @@ router.get('/menu', (req, res) => {
     });
 });
 
+router.get('/users', (req, res) => {
+    connection((db) => {
+        db.collection('users')
+            .find()
+            .toArray()
+            .then((users) => {
+                response.data = users;
+                res.json(response);
+            })
+            .catch((err) => {
+                sendError(err, res);
+            });
+    });
+});
+
 module.exports = router;

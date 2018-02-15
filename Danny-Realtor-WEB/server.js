@@ -3,6 +3,9 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const http = require('http');
 const app = express();
+//nodemon
+const reload = require('reload');
+//nodemon
 
 // API File for interacting with MongoDB
 const api = require('./server/routes/api');
@@ -30,4 +33,9 @@ const server = http.createServer(app);
 
 server.listen(port, () => console.log(`Running on localhost: ${port}`));
 
+//nodemon
+// const server = http.createServer();
+// server.listen(3000, () => console.log('Server Started'));
+// reload(app);
+//nodemon
 
